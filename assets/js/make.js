@@ -15,7 +15,7 @@ function loadImages () {
   $.each(toppings, function (key, val) {
     var img = new Image();
     img.setAttribute('crossOrigin', 'anonymous');
-    img.src = '/assets/toppings/' + val.image;
+    img.src = '//s3-sa-east-1.amazonaws.com/pizza-luvrs-bucket-01/toppings/' + val.image;
     val.img = img;
   });
 }
